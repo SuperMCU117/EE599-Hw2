@@ -1,0 +1,22 @@
+
+void Swap(int &x, int &y){
+  int temp = x;
+  x=y;
+  y=temp;
+  return;
+}
+
+
+void Swap(int &x,int &y);
+
+
+int main()
+{
+    Solution solution;
+    int x= 10;
+    int y=20;
+    std::cout<<"Before: x="<<x<<", y="<<y<<", we call Swap(x,y); "<<std::endl;
+    solution.Swap(x,y);
+    std::cout<<"After: x="<<x<<", y="<<y<<std::endl;
+    return EXIT_SUCCESS;
+}
